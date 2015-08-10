@@ -6,9 +6,23 @@
 </head>
 <body>
 	<div id="container1"  >Loading video...</div>
+	
+	<!--
 			  <script type="text/javascript">
 					var playerInstance = jwplayer("container1");
 					playerInstance.setup({					  
+						image: "poster.jpg",
+						file: "myManifest.m3u8"				  
+					});
+			  </script>
+	-->
+	
+	
+			  <script type="text/javascript">
+					var playerInstance = jwplayer("container1");
+					playerInstance.setup({
+						width: "100%",
+						aspectratio: "12:5",
 						image: "poster.jpg",
 						sources: [{
 								file: "video/5mb/sample_1080x720.mp4",
@@ -26,6 +40,9 @@
 							  }]					  
 					});
 			  </script>
+		
+		
+		
 	</div>
 </body>
 </html>
